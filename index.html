@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="./images/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <title>Frontend Mentor | Tip calculator app</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>Spli</span><span>tter</span></h1>
+      <div class="calculator">
+        <form action="#" class="form">
+        <div class="calculator__first">
+          <div class="amount">
+            <label for="bill" class="amount__label">Bill</label>
+            <span class="error error--amount"></span>
+            <input type="number" class="amount__input" dir="rtl" id="bill" placeholder = "0" />
+          </div>
+          <div class="tip">
+            <label class="tip__label" for="tip">Select Tip%</label>
+            <span class="error error--tip"></span>
+            <p class="tip__per tip__per--5" data-tip="0.05">5%</p>
+            <p class="tip__per tip__per--10" data-tip="0.10">10%</p>
+            <p class="tip__per tip__per--15" data-tip="0.15">15%</p>
+            <p class="tip__per tip__per--25" data-tip="0.25">25%</p>
+            <p class="tip__per tip__per--50" data-tip="0.50">50%</p>
+            <input type="number" class="tip--custom" dir="rtl" placeholder="Custom"/>
+          </div>
+          <div class="count">
+            <label for="count" class="count__label">Number of People</label>
+            <span class="error error--count"></span>
+            <input
+              type="number"
+              class="count__input"
+              dir="rtl"
+              id="count"
+              placeholder = "0"
+            />
+          </div>
+          <input type="submit" hidden>
+          <button type="submit" class="form__btn">ok</button>
+        </form>
+        </div>
+        <div class="calculator__second">
+          <div class="tip-amount">
+           <div class="tip-amount__label">
+            <h3>Tip Amount</h3>
+            <span>/ person</span>
+           </div>
+            <h2 class="tip-amount__value">$0.00</h2>
+          </div>
+          <div class="total-amount">
+            <div class="total-amount__label">
+              <h3>Total</h3>
+              <span>/ person</span>
+            </div>
+            <h2 class="total-amount__value">$0.00</h2>
+          </div>
+          <button type="submit" class="btn btn--submit">Split my bill</button>
+          <button type="button" class="btn btn--reset" disabled>Reset</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
