@@ -327,6 +327,9 @@ input[type="number"] {
   html {
     font-size: 50%;
   }
+  .btn--submit {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -339,10 +342,6 @@ input[type="number"] {
 
   .total-amount {
     margin-bottom: 2rem;
-  }
-
-  .btn--submit {
-    display: block;
   }
 }
 
